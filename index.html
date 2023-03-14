@@ -9,8 +9,9 @@
 </head>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene 
-	embedded arjs='sourceType: webcam;'
-	arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+	gltf-model="dracoDecoderPath: path/to/decoder/;
+    basisTranscoderPath: path/to/transcoder/;
+    meshoptDecoderPath: path/to/meshopt_decoder.js;">
     
 
     <!-- handle marker with hiro preset -->
@@ -39,7 +40,8 @@
    <!--<a-marker type='barcode' value='1'>-->
   
 		<a-entity 
-			gltf-model="#animation"			
+			gltf-model="#animation"	
+			animation-mixer			
 			position='0 -1 -3'
 			scale="1 1 1"
 		></a-entity>
