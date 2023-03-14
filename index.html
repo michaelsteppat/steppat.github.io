@@ -17,6 +17,7 @@
    <a-entity
 	     obj-model="obj: url(./laubbaum2.obj);
 		 mtl: url(./laubbaum2.mtl)"
+		 position='0 0.5 0'
 		 scale="1 1 1"		 
 	></a-entity>   
    </a-marker>
@@ -24,13 +25,15 @@
    <a-marker type='barcode' value='1'>
    <a-assets>
 		 <a-asset-item
-		 id="animation"
-	     src="./robot2.gltf"		
+			id="animation"
+			src="./robot2.gltf"		
 		></a-asset-item>
 		</a-assets>
-		<a-entity gltf-model="#animation"
-		 scale="1 1 1">
-		</a-entity>
+		<a-entity 
+			gltf-model="#animation"
+			position='0 0.5 0'
+			scale="1 1 1"
+		></a-entity>
    
    </a-marker>
 
